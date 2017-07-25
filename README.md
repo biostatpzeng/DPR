@@ -5,4 +5,5 @@ DPR is the software implementing the latent Dirichlet Process Regression (DPR) m
 
 Currently, DPR is only supported for Linux platform. 
 
+https://github.com/biostatpzeng/DPR/blob/master/LICENSE
 
