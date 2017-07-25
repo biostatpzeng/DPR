@@ -7,7 +7,7 @@ Currently, DPR is only supported for Linux platform.
 
 # Installing and Compiling DPR
 
-If you have downloaded a binary executable, no installation is necessary. In some cases, you may need to use “chmod a+x DPR” before using the binary executable. In addition, notice that the end-of-line coding in Windows (DOS) is different from that in Linux, and so you may have to convert input files using the utility dos2unix or unix2dos in order to use them in a different platform.
+If you have downloaded a binary executable, no installation is necessary. In some cases, you may need to use “chmod a+x DPR” before using the binary executable. In addition, notice that the end-of-line coding in Windows (DOS) is different from that in Linux, and so you may have to convert input files using the utility "dos2unix" or "unix2dos" in order to use them in a different platform.
 
 If you want to compile DPR by yourself, you will need to download the source code, and you will need a standard C/C++ compiler such as GNU gcc, as well as the GSL and LAPACK libraries. You will need to change the library paths in the Makefile accordingly.
 A sample Makefile is provided along with the source code. For details on installing GSL library, please refer to http://www.gnu.org/s/gsl/. For details on installing LAPACK library, please refer to http://www.netlib.org/lapack/. The DPR software also relies on the Eigen library (http://eigen.tuxfamily.org/index.php?title=Main_Page), which is included in the source code folder.
