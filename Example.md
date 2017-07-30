@@ -12,7 +12,7 @@ Genotype and phenotype files are in both BIMBAM and PLINK binary formats. For de
 ### To fit a quantitative trait (i.e. CD8) using DPR with VB algorithm
 ***`./bin/DPR -g ./example/mouse_hs1940.geno.txt.gz -p ./example/mouse_hs1940.pheno.txt -n 2 -a ./example/mouse_hs1940.anno.txt -k  ./example/mouse_hs1940.cXX.txt -dpr 1 -nk 4 -o mouse_hs1940_CD8_vb`***
 
-Explain:
+**Explain:**
 
 “-g” specifies BIMBAM genotypes, “-p” specifies phenotypes, “-a” specifies annotation file, “-k” specifies relatedness matrix, “-dpr 1” specifies fitting DPR using VB algorithm, “-nk 4” specifies four normal components included in into the mixture prior, “-o” specifies the output file.
 
