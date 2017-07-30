@@ -15,7 +15,7 @@ If you want to compile DPR by yourself, you will need to download the source cod
 A sample Makefile is provided along with the source code. For details on installing GSL library, please refer to [GSL](http://www.gnu.org/s/gsl/). For details on installing LAPACK library, please refer to [LAPACK](http://www.netlib.org/lapack/). The DPR software also relies on the [Eigen library](http://eigen.tuxfamily.org/index.php?title=Main_Page), which is included in the source code folder.
 
 # Contact
-We are very grateful to any questions, comments, or bugs reports; and please contact us via zpstat@xzhmu.edu.cn or pingzeng@umich.edu (Ping Zeng).
+We are very grateful to any questions, comments, or bugs reports; and please contact us via <zpstat@xzhmu.edu.cn> or pingzeng@umich.edu (Ping Zeng). [Ping Zeng](zpstat@xzhmu.edu.cn)
 
 
 
