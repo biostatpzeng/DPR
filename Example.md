@@ -36,7 +36,7 @@ Explain:
 “-bfile” specifies plink files, i.e. mouse_hs1940.fam, mouse_hs1940.bim and mouse_hs1940.ped, “-n” specifies phenotypes using the 7th column of mouse_hs1940.fam, “-k” specifies relatedness matrix, “-dpr 3” specifies fitting DPR using adaptive LDR, “-mnk 6” specifies the maximum number of normal components included in the mixture prior, “-sp 0.2” specifies samplings for this adaptive process, “-w 10000” specifies 10000 burn-ins, “-s 10000” specifies 10000 samplings after burn-in, “-o” specifies the output file. More specifically, this command will repeat fitting MCMC sampling for nk=2 to nk=6, for each nk (i.e. 2, 3, 4, 5 and 6), the burn-in number is 2000=10000×0.2 (w×sp), the MC sampling number is also 2000=10000×0.2 (s×sp). After the optimal nk (say nk*) is selected based on the smallest DIC across nk=2 to nk=6, this command continuous perform DPR using MCMC sampling with nk* normal components, and now the burn-in number is 10000, the MC sampling number is 10000.
 
 # Citing DPR
-Ping Zeng and Xiang Zhou (2017). Non-parametric genetic prediction of complex traits with latent Dirichlet process regression models. [Nature Communications (in press)](http://www.biorxiv.org/content/early/2017/06/13/149609).
+Ping Zeng and Xiang Zhou (2017). Non-parametric genetic prediction of complex traits with latent Dirichlet process regression models. Nature Communications [in press](http://www.biorxiv.org/content/early/2017/06/13/149609).
 
 # Reference
 1. Ferguson TS. A Bayesian analysis of some nonparametric problems. Ann Stat. 1973; 1: 209-230.
