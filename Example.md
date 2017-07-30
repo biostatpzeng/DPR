@@ -18,21 +18,21 @@ Explain:
 
 ***`./bin/DPR -bfile ./example/mouse_hs1940 -n 2 -k ./example/mouse_hs1940.cXX.txt -dpr 1 -nk 4 -o mouse_hs1940_CD8_vb`***
 
-Explain:
+**Explain:**
 
 “-bfile” specifies plink files, i.e. mouse_hs1940.fam, mouse_hs1940.bim and mouse_hs1940.ped, “-n” specifies phenotypes using the 7th column of mouse_hs1940.fam, “-k” specifies relatedness matrix, “-dpr 1” specifies fitting DPR using VB algorithm, “-nk 4” specifies four normal components included in into the mixture prior, “-o” specifies the output file.
 
 ### To fit a quantitative trait (i.e. CD8) using DPR with MCMC algorithm
 ***`./bin/DPR -bfile ./example/mouse_hs1940 -n 2 -k ./example/mouse_hs1940.cXX.txt -dpr 2 -nk 4 -m 100000 -t 1 -w 10000 -s 10000 -o mouse_hs1940_CD8_mcmc`***
 
-Explain:
+**Explain:**
 
 “-bfile” specifies plink files, i.e. mouse_hs1940.fam, mouse_hs1940.bim and mouse_hs1940.ped, “-n” specifies phenotypes using the 7th column of mouse_hs1940.fam, “-k” specifies relatedness matrix, “-dpr 2” specifies fitting DPR using MCMC algorithm, “-nk 4” specifies four normal components included in into the mixture prior, "-m 100000" specifies the top 100000 SNPs to be included in the model (if the value is larger than the total number of the SNPs, then all variants are used), "-t 1" update those non-selected, likely unimportant SNPs once every 1 iteration, “-w 10000” specifies 10000 burn-ins, “-s 10000” specifies 10000 samplings after burn-in, “-o” specifies the output file.
 
 ### To fit a quantitative trait (i.e. CD8) using adaptive LDR
 ***`./bin/DPR -bfile ./example/mouse_hs1940 -n 2 -k ./example/mouse_hs1940.cXX.txt -dpr 3 -mnk 6 -sp 0.2 -w 10000 -s 10000 -o mouse_hs1940_CD8_ada`***
 
-Explain:
+**Explain:**
 
 “-bfile” specifies plink files, i.e. mouse_hs1940.fam, mouse_hs1940.bim and mouse_hs1940.ped, “-n” specifies phenotypes using the 7th column of mouse_hs1940.fam, “-k” specifies relatedness matrix, “-dpr 3” specifies fitting DPR using adaptive LDR, “-mnk 6” specifies the maximum number of normal components included in the mixture prior, “-sp 0.2” specifies samplings for this adaptive process, “-w 10000” specifies 10000 burn-ins, “-s 10000” specifies 10000 samplings after burn-in, “-o” specifies the output file. More specifically, this command will repeat fitting MCMC sampling for nk=2 to nk=6, for each nk (i.e. 2, 3, 4, 5 and 6), the burn-in number is 2000=10000×0.2 (w×sp), the MC sampling number is also 2000=10000×0.2 (s×sp). After the optimal nk (say nk*) is selected based on the smallest DIC across nk=2 to nk=6, this command continuous perform DPR using MCMC sampling with nk* normal components, and now the burn-in number is 10000, the MC sampling number is 10000.
 
