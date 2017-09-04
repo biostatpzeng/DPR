@@ -14,6 +14,9 @@ If you have downloaded a binary executable [procedure](https://github.com/biosta
 If you want to compile DPR by yourself, you will need to download the source code, and you will need a standard C/C++ compiler such as GNU gcc, as well as the GSL and LAPACK libraries. You will need to change the library paths in the Makefile accordingly.
 A sample Makefile is provided along with the source code. For details on installing GSL library, please refer to [GSL](http://www.gnu.org/s/gsl/). For details on installing LAPACK library, please refer to [LAPACK](http://www.netlib.org/lapack/). The DPR software also relies on the [Eigen library](http://eigen.tuxfamily.org/index.php?title=Main_Page), which is included in the source code folder.
 
+## Citing
+#### Ping Zeng and Xiang Zhou (2017). Non-parametric genetic prediction of complex traits with latent Dirichlet process regression models. Nature Communications [in press](http://www.biorxiv.org/content/early/2017/06/13/149609).
+
 # Contact
 We are very grateful to any questions, comments, or bugs reports; and please contact [Ping Zeng](https://github.com/biostatpzeng) via zpstat@xzhmu.edu.cn or ~~pingzeng@umich.edu~~.
 
